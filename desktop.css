@@ -1,0 +1,181 @@
+
+@media screen and (min-width: 728px){
+
+.wrap {
+    width: 1000px;
+    height: 1200px;
+    margin: 0px auto;
+    padding: 40px;
+    padding-bottom: 0;
+    display: flow-root;
+    background: linear-gradient(to top,#f5f5f5,#ffffff,#e0d8d1,#afa09a,#afa09a);
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+header h1 {
+    width: 207.5px; height: 100px;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+header h1  a {
+    display: block;
+    width: 207.5px; height: 39px;
+    background-image: url(image/img_logo.svg);
+}
+header ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+}
+header ul a {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 13.5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+    width: 140px; height: 40px;
+    border-left: 3px var(--white-color);
+    border-bottom: 40px solid var(--dark-color);
+    transition: all 0.5s;
+}
+header ul a:hover {
+    color: var(--black-color);
+    background-color: var(--sub-color);
+    border-bottom: 4px solid var(--main-color);
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    gap:20px;
+}
+main {
+    width: 900px;
+    height: 500px;
+    border-radius: 15px;
+    background-image: url(image/img_main.gif);
+    background-size: cover;
+    background-position: center;
+    /*overflow: hidden;*/
+
+}
+main h1 {
+    color: var(--main-color);
+    font-size: 95px;
+    line-height: 95px;
+    text-align: right;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main p {
+    color: var(--sub-color);
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 330px;
+    width: 75%;
+}
+
+div.talk{
+    padding: 180px 100px;
+    height: 800px;
+    line-height: 70px;
+    text-align: center;
+    background-image: url(image/img_talk.png);
+}
+section.picture{
+    width: 50px; height: 100px;
+    margin: 50px auto;
+    position: relative;
+}
+
+div.mushroom{
+
+    width: 200px; 
+    height: 200px;
+    position: absolute; /* 使用絕對定位 */
+    top: 0px; /* 調整距離頂部的位置 */
+    left: -450px; /* 調整距離左側的位置 */
+    z-index: 1000; /* 確保在最上層 */
+    animation: mushroom-move 5s infinite ease-in alternate;
+    margin: 20px; 
+}
+div.mushroom img {
+    width: 90%; /* 縮小圖片寬度為原來的 80% */
+    height: auto; /* 自動計算高度 */
+}
+
+@keyframes mushroom-move {   
+    from{transform: translateX(0);}
+    to{transform: translateX(800px);}
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+aside {
+    width: 900px;
+    display: flex;
+    gap: 20px;
+}
+div.card {
+    height: 340px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    background-color: var(--sub-color);
+    transition: all 3s;
+}
+
+div.card :hover{
+    color: var(--sub-color);
+    background-color: var(--black-color);
+
+}
+
+.card__intro {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.card__intro h3 {
+    color: var(--main-color);
+    font-size: 24px;
+    line-height: 26px;
+}
+.card__intro h5 {
+    font-size: 15px;
+    line-height: 24px;
+    padding-right: 20px;
+}
+.card__intro p {
+    font-size: 15px;
+    line-height: 24px;
+    font-family:var(--sub-font);
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    top: 3000px;
+    clear: both;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 60px;
+}
+
+}/**Desktop Setting End**/

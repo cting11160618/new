@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(mobile.css);
+@import url(desktop.css);
+
+/*General Setting*/
+
+:root {
+    --main-color:#7f6e62;
+    --sub-color:#e0d8d1;
+    --black-color:#000;
+    --dark-color:#afa09a;
+    --light-color:#F5F5F5;
+    --white-color:#fff;
+    --main-font:'noto sans', bold;
+    --sub-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+* {box-sizing: border-box;}
+
+body, h1, h2, h3, p {
+    margin: 0; padding: 0;
+}
+body {
+    color: #989898;
+    font-family:var(--main-font) ;
+    background-color: var(--light-color);
+}

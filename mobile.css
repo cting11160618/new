@@ -1,0 +1,209 @@
+@media screen and (max-width: 727px) {
+
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 17px;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 1200px;
+        margin: 0px auto;
+        padding: 40px;
+        padding-bottom: 0;
+        display: flow-root;
+        background: linear-gradient(to top, #f5f5f5, #ffffff, #e0d8d1, #afa09a, #afa09a, #afa09a, #afa09a);
+    }
+
+    header h1 {
+        width: 100%;height: 100px;
+        text-indent: -999px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+
+    header h1 a {
+        display: block;
+        width: 200px;
+        height: 39px;
+        background-image: url(image/img_logo.svg);
+        background-size: contain;
+        /* 確保背景圖片符合指定的尺寸 */
+        background-repeat: no-repeat;
+        /* 避免背景圖片重複 */
+        margin: 0 auto;
+    }
+
+    header ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    header ul a {
+        color: var(--black-color);
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 80px;
+        display: block;
+        width: 80%;
+        height: 80px;
+        border-left: 3px var(--white-color);
+        border-bottom: 80px solid var(--dark-color);
+        transition: all 0.5s;
+        margin: 0 auto;
+    }
+
+    header ul a:hover {
+        color: var(--black-color);
+        background-color: var(--sub-color);
+        border-bottom: 0px solid var(--main-color);
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin: 100px;
+        gap: 40px;
+    }
+
+    main {
+        margin-top: 80px;
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        /* 垂直置中 */
+        border-radius: 15px;
+        background-image: url(image/img_main.gif);
+        background-size: cover;
+        background-position: center;
+        /*overflow: hidden;*/
+    }
+
+    div.talk {
+        padding: 200px 100px;
+        height: 800px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .talk__intro h2 {
+        color: var(--main-color);
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    div.mushroom {
+
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        /* 使用絕對定位 */
+        top: -230px;
+        /* 調整距離頂部的位置 */
+        z-index: 1000;
+        /* 確保在最上層 */
+        animation: rotate 40s alternate ease infinite;
+        ;
+        margin: 10px;
+    }
+
+    .talk__intro h3 {
+        color: var(--main-color);
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    section.picture {
+        width: 100%;
+        height: 100px;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    div.mushroom img {
+        width: 15%;
+        /* 縮小圖片寬度為原來的 80% */
+        height: auto;
+        /* 自動計算高度 */
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg) scale(1);
+            /* 初始旋转角度和大小 */
+        }
+
+        100% {
+            transform: rotate(3000deg)scale(1);
+            /* 最终旋转角度和更大的大小 */
+        }
+    }
+
+    aside {
+        width: 100%;
+        gap: 40px;
+    }
+
+    div.card {
+        min-height: 260px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        background-color: var(--sub-color);
+        transition: all 3s;
+        margin-bottom: 30px;
+    }
+
+    div.card :hover {
+        color: var(--sub-color);
+        background-color: var(--black-color);
+
+    }
+
+    .card__intro {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .card__intro h3 {
+        color: var(--main-color);
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .card__intro h5 {
+        font-size: 15px;
+        line-height: 24px;
+        padding-right: 20px;
+    }
+
+    .card__intro p {
+        font-size: 15px;
+        line-height: 24px;
+        font-family: var(--sub-font);
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+
+    footer {
+        text-align: center;
+        top: 30px;
+        clear: both;
+    }
+
+    footer p {
+        font-size: 18px;
+        line-height: 60px;
+    }
+
+}
